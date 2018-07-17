@@ -1,0 +1,8 @@
+{
+  "name": "homeonic",
+  "app_id": "9cbbf71d",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
