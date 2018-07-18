@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Room {{(room.activeRoom | async)?.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content *ngIf="(room.activeRoom | async)" padding>
+  <h3>Gérer la room</h3>
+  <iot-item *ngFor="let item of (room.activeRoom | async).items" [item]="item"></iot-item>
+</ion-content>
